@@ -22,15 +22,20 @@ Dialog DLL:      TCM.DLL V1.56.1.0
  
 <h2>Project:</h2>
 D:\king\MM32\MM32F5\mdk\project.uvprojx
-Project File Date:  08/05/2022
+Project File Date:  08/06/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.18', folder: 'D:\Keil\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-compiling main.c...
+../application/scheduler.c(58): warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("Test 2Hz\r\n");
+        ^
+../application/scheduler.c(58): note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+compiling scheduler.c...
 linking...
-Program Size: Code=30918 RO-data=2650 RW-data=8 ZI-data=4540  
-".\Objects\project.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=31578 RO-data=2906 RW-data=88 ZI-data=4872  
+".\Objects\project.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 

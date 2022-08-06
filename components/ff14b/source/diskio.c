@@ -114,6 +114,7 @@ DRESULT disk_read (
 {
 	DRESULT res;
 	//int result;
+	uint8_t i;
 
 	switch (pdrv) {
 	case DEV_RAM :
@@ -127,14 +128,14 @@ DRESULT disk_read (
 
 	case DEV_MMC :
 		// translate the arguments here
-
+			if(!SDSPI_ReadBlocks(&app_sdspi_card,buff, sector, count))
+			{
+				res = RES_OK;
+			}else{
+				res = RES_ERROR;
+			}
 		//result = MMC_disk_read(buff, sector, count);
-		if(!SDSPI_ReadBlocks(&app_sdspi_card,buff, sector, count))
-		{
-			res = RES_OK;
-		}else{
-			res = RES_ERROR;
-		}
+		
 
 		// translate the reslut code here
 

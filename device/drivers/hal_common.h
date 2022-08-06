@@ -3,7 +3,8 @@
  * All rights reserved.
  *
  * SPDX-License-Identifier: BSD-3-Clause
- */
+ */
+
 #ifndef __HAL_COMMON_H__
 #define __HAL_COMMON_H__
 
@@ -12,6 +13,9 @@
 #include <string.h>
 
 #include "hal_device_registers.h"
+
+#include "board_it.h"
+#include "Scheduler.h"
 
 #endif /* __HAL_COMMON_H__ */
 

@@ -1,8 +1,10 @@
 --cpu=Star-MC1
 ".\objects\main.o"
+".\objects\scheduler.o"
 ".\objects\board_init.o"
 ".\objects\clock_init.o"
 ".\objects\pin_init.o"
+".\objects\board_it.o"
 ".\objects\sdspi_port.o"
 ".\objects\hal_adc.o"
 ".\objects\hal_comp.o"

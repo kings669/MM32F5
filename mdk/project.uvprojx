@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>APP_SDSPI_BASIC NDEBUG BRD_PLUS_F5270</Define>
               <Undefine></Undefine>
-              <IncludePath>../board;../device/drivers;..;../components/sdspi/src;../device/CMSIS/Include;../device;../application;..\components\ff14b\source</IncludePath>
+              <IncludePath>../board;../device/drivers;..;../components/sdspi/src;../device/CMSIS/Include;../device;../application;..\components\ff14b\source;..\application</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -389,6 +389,11 @@
               <FileType>1</FileType>
               <FilePath>../application/main.c</FilePath>
             </File>
+            <File>
+              <FileName>scheduler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\application\scheduler.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -423,6 +428,16 @@
               <FileName>pin_init.h</FileName>
               <FileType>5</FileType>
               <FilePath>../board/pin_init.h</FilePath>
+            </File>
+            <File>
+              <FileName>board_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\board_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>board_it.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\board\board_it.h</FilePath>
             </File>
             <File>
               <FileName>sdspi_port.c</FileName>
@@ -793,7 +808,20 @@
   <RTE>
     <apis/>
     <components/>
-    <files/>
+    <files>
+      <file attr="config" category="header" name="components\finsh\finsh_config.h" version="3.1.5">
+        <instance index="0" removed="1">RTE\RTOS\finsh_config.h</instance>
+        <component Cbundle="RT-Thread" Cclass="RTOS" Cgroup="shell" Cvendor="RealThread" Cversion="3.1.5" condition="shell"/>
+        <package name="RT-Thread" schemaVersion="1.4" url="https://www.rt-thread.org/download/mdk/" vendor="RealThread" version="3.1.5"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="components\finsh\finsh_port.c" version="3.1.5">
+        <instance index="0" removed="1">RTE\RTOS\finsh_port.c</instance>
+        <component Cbundle="RT-Thread" Cclass="RTOS" Cgroup="shell" Cvendor="RealThread" Cversion="3.1.5" condition="shell"/>
+        <package name="RT-Thread" schemaVersion="1.4" url="https://www.rt-thread.org/download/mdk/" vendor="RealThread" version="3.1.5"/>
+        <targetInfos/>
+      </file>
+    </files>
   </RTE>
 
   <LayerInfo>

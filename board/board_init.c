@@ -4,7 +4,8 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-
+
+
 #include "board_init.h"
 #include "hal_gpio.h"
 
@@ -26,6 +27,7 @@ void BOARD_Init(void)
     BOARD_InitPins();
 
     BOARD_InitDebugConsole();
+		SysTick_Init();
 }
 
 void BOARD_InitDebugConsole(void)

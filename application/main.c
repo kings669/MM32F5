@@ -6,9 +6,9 @@
  */
 
 #include "board_init.h"
+#include "hal_common.h"
 #include "ffconf.h"
 #include "ff.h"
-
 
 /*
  * Macros.
@@ -17,114 +17,73 @@
 /*
  * Variables.
  */
-
+ 
 FATFS fs;
-const TCHAR fs_drv[] = "1:/";
-TCHAR fs_path[256] = "\0";
-
 
 /*
  * Declerations.
  */
- FRESULT app_fatfs_listfiles(const char * dir_path);
-
-
+void fatFs_init(void);
+void delay_init(uint32_t TICK_RATE_HZ);
+void delay_ms(uint16_t nms);
 /*
  * Functions.
  */
 int main(void)
 {
-    uint8_t ch;
-
-    BOARD_Init();
-
-    printf("sdspi_basic example.\r\n");
-	
-		/* f_mount().\r\n */
-    printf("f_mount(). ");
-    if( !f_mount(&fs, fs_drv ,1) )
-    {
-        printf("succ.\r\n");
-    }
-    else
-    {
-        printf("fail.\r\n");
-        while (1)
-        {}
-    }
-    
-    /* root dir. */
-    app_fatfs_listfiles(fs_drv);
-    
-    /* dir0. */
-    fs_path[0] = '\0';
-    strcat(fs_path, fs_drv);
-    strcat(fs_path, "dir0/");
-    app_fatfs_listfiles(fs_path);
-
-    /* dir1. */
-    fs_path[0] = '\0';
-    strcat(fs_path, fs_drv);
-    strcat(fs_path, "dir1/");
-    app_fatfs_listfiles(fs_path);
-    
-    printf("app_fatfs_listfiles() done.\r\n");
-
+		BOARD_Init();
+		printf("**********MM32F5270************\r\n");
+		printf(">BOARD_Init() Done!\r\n");
+		printf(">fatFs_init() Start...\r\n");
+		fatFs_init();
+		printf(">fatFs_init() Done!\r\n");
+		printf(">Scheduler_Setup() Start...\r\n");
+		Scheduler_Setup();
+		printf(">Scheduler_Setup() Done!\r\n");
+		printf("**********Init END************\r\n");
     while (1)
     {
-        ch = getchar();
-        putchar(ch);
+			Scheduler_Run();
     }
 }
 
-/* list the file items under the indecated path. */
-FRESULT app_fatfs_listfiles(const char * dir_path)
+/*Test FatFs Init*/
+void fatFs_init(void)
 {
-    FRESULT res;
-    FILINFO fno;
-    DIR dir;
-    char *fn;
-
-    printf("* %s ->\r\n", dir_path);
-    
-    res = f_opendir(&dir, dir_path);
-    if (res != FR_OK)
-    {
-        return res;
-    }
-
-    for (;;)
-    {
-        /* read iterator. */
-        res = f_readdir(&dir, &fno);
-        if ( (res != FR_OK) || (fno.fname[0] == 0) )
-        {
-            break;
-        }
-
-        /* skip the "self" and "father" dir item. */
-        if (fno.fname[0] == '.') 
-        {
-            continue;
-        }
-        
-        /* collect the dir or file name. */
-        fn = fno.fname;
-        if (fno.fattrib & AM_DIR) /* dir name. */
-        {
-            printf("\t%s/\r\n", fn);
-        } 
-        else /* file name */
-        {
-            printf("\t%s: %u B\r\n", fn, (unsigned)fno.fsize);
-        }			
-    }
-
-    /* close the opened dir to reest the iterator. */
-    res = f_closedir(&dir);
-
-    return res;
+		static FIL File;
+		static UINT br=0;
+		static uint8_t Buffer[14];
+		FRESULT  res;	
+		
+		printf(">f_mount() Start...\r\n");
+		res = f_mount(&fs,"1:/",1);
+		if(res == FR_OK)
+		{
+				printf(">f_mount() Done!\r\n");
+				printf(">f_open() Start...\r\n");
+				res = f_open(&File,"1:/HELLO.txt",FA_READ|FA_WRITE);
+				if(res == FR_OK)
+				{
+					printf(">f_open() Done!\r\n");
+					do{
+							res = f_read(&File,Buffer,0XFF,&br);
+							if(br!=0)
+							{
+								printf(">f_read() Done! HELLO.txt:%s\r\n",Buffer);
+							}
+					}while(br!=0);
+					f_close(&File);
+				}else{
+						printf(">f_open() Fail!,res=%d\r\n",res);
+				}
+		}else{
+				printf(">f_mount() Fail!,res=%d\r\n",res);
+				while(1);
+		}
 }
+
+/*-----------------------------------------------------------*/
+
 
 /* EOF. */
 
