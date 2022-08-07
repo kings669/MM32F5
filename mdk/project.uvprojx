@@ -306,8 +306,8 @@
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
-                <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x8000</Size>
               </OCR_RVCT10>
             </OnChipMemories>
             <RvctStartVector></RvctStartVector>
@@ -338,9 +338,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>APP_SDSPI_BASIC NDEBUG BRD_PLUS_F5270</Define>
+              <Define>APP_SDSPI_BASIC NDEBUG BRD_PLUS_F5270,FPM_DEFAULT,HAVE_CONFIG_H</Define>
               <Undefine></Undefine>
-              <IncludePath>../board;../device/drivers;..;../components/sdspi/src;../device/CMSIS/Include;../device;../application;..\components\ff14b\source;..\application</IncludePath>
+              <IncludePath>../board;../device/drivers;..;../components/sdspi/src;../device/CMSIS/Include;../device;../application;..\components\ff14b\source;..\application;..\components\libmad-0.15.1b</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -393,6 +393,11 @@
               <FileName>scheduler.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\application\scheduler.c</FilePath>
+            </File>
+            <File>
+              <FileName>mp3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\application\mp3.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -798,6 +803,66 @@
               <FileName>ffunicode.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\components\ff14b\source\ffunicode.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Libmad</GroupName>
+          <Files>
+            <File>
+              <FileName>bit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\bit.c</FilePath>
+            </File>
+            <File>
+              <FileName>decoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\decoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>fixed.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\fixed.c</FilePath>
+            </File>
+            <File>
+              <FileName>frame.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\frame.c</FilePath>
+            </File>
+            <File>
+              <FileName>huffman.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\huffman.c</FilePath>
+            </File>
+            <File>
+              <FileName>layer3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\layer3.c</FilePath>
+            </File>
+            <File>
+              <FileName>layer12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\layer12.c</FilePath>
+            </File>
+            <File>
+              <FileName>stream.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\stream.c</FilePath>
+            </File>
+            <File>
+              <FileName>synth.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\synth.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>version.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\components\libmad-0.15.1b\version.c</FilePath>
             </File>
           </Files>
         </Group>

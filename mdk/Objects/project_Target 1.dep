@@ -1,10 +1,10 @@
 Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6180000::V6.18::ARMCLANG
-F (../application/main.c)(0x62EE79AA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/main.o -MD)
+F (../application/main.c)(0x62EF7C18)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/main.o -MD)
 I (..\board\board_init.h)(0x62ECBF5C)
 I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
@@ -18,21 +18,23 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 I (..\device\drivers\hal_uart.h)(0x62ECBF0E)
 I (..\device\drivers\hal_gpio.h)(0x62ECBF0E)
 I (..\board\clock_init.h)(0x62ECBF0E)
 I (..\board\pin_init.h)(0x62ECBF0E)
-I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
-I (..\components\ff14b\source\ff.h)(0x61EE36BE)
-F (..\application\scheduler.c)(0x62EE7A28)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/scheduler.o -MD)
+F (..\application\scheduler.c)(0x62EF6D76)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/scheduler.o -MD)
 I (..\application\Scheduler.h)(0x62EE78E8)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -44,12 +46,38 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
-F (../board/board_init.c)(0x62EE7888)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/board_init.o -MD)
+I (..\application\mp3.h)(0x62EF7C9F)
+F (..\application\mp3.c)(0x62EF7DC8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/mp3.o -MD)
+I (..\components\libmad-0.15.1b\mad.h)(0x60DC1BBF)
+I (..\application\mp3.h)(0x62EF7C9F)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
+I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (..\device\hal_device_registers.h)(0x62ECBF0E)
+I (..\device\mm32f5277e.h)(0x62ECBF0E)
+I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
+I (..\device\CMSIS\Include\cmsis_version.h)(0x61EE36BE)
+I (..\device\CMSIS\Include\cmsis_compiler.h)(0x61EE36BE)
+I (..\device\CMSIS\Include\cmsis_armclang.h)(0x61EE36BE)
+I (D:\Keil\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
+I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
+I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
+I (..\board\board_it.h)(0x62EE7709)
+I (..\application\Scheduler.h)(0x62EE78E8)
+F (../board/board_init.c)(0x62EE7888)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/board_init.o -MD)
 I (..\board\board_init.h)(0x62ECBF5C)
 I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
@@ -63,19 +91,23 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 I (..\device\drivers\hal_uart.h)(0x62ECBF0E)
 I (..\device\drivers\hal_gpio.h)(0x62ECBF0E)
 I (..\board\clock_init.h)(0x62ECBF0E)
 I (..\board\pin_init.h)(0x62ECBF0E)
 F (../board/board_init.h)(0x62ECBF5C)()
-F (../board/clock_init.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/clock_init.o -MD)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+F (../board/clock_init.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/clock_init.o -MD)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -87,17 +119,21 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\board\clock_init.h)(0x62ECBF0E)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 F (../board/clock_init.h)(0x62ECBF0E)()
-F (../board/pin_init.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/pin_init.o -MD)
+F (../board/pin_init.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/pin_init.o -MD)
 I (..\board\pin_init.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -109,17 +145,21 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 I (..\device\drivers\hal_gpio.h)(0x62ECBF0E)
 F (../board/pin_init.h)(0x62ECBF0E)()
-F (..\board\board_it.c)(0x62EE76ED)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/board_it.o -MD)
+F (..\board\board_it.c)(0x62EF7660)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/board_it.o -MD)
 I (..\board\board_it.h)(0x62EE7709)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -131,20 +171,22 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\board\board_init.h)(0x62ECBF5C)
-I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 I (..\device\drivers\hal_uart.h)(0x62ECBF0E)
 I (..\device\drivers\hal_gpio.h)(0x62ECBF0E)
 I (..\board\clock_init.h)(0x62ECBF0E)
 I (..\board\pin_init.h)(0x62ECBF0E)
 F (..\board\board_it.h)(0x62EE7709)()
-F (../board/sdspi_port.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/sdspi_port.o -MD)
+F (../board/sdspi_port.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/sdspi_port.o -MD)
 I (..\board\board_init.h)(0x62ECBF5C)
 I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
@@ -158,8 +200,11 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 I (..\device\drivers\hal_uart.h)(0x62ECBF0E)
 I (..\device\drivers\hal_gpio.h)(0x62ECBF0E)
@@ -167,12 +212,13 @@ I (..\board\clock_init.h)(0x62ECBF0E)
 I (..\board\pin_init.h)(0x62ECBF0E)
 I (..\components\sdspi\src\sdspi.h)(0x6283910A)
 I (..\components\sdspi\src\sdmmc_spec.h)(0x6283910A)
-F (../device/drivers/hal_adc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_adc.o -MD)
+F (../device/drivers/hal_adc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_adc.o -MD)
 I (..\device\drivers\hal_adc.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -184,16 +230,20 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_adc.h)(0x62ECBF0E)()
-F (../device/drivers/hal_common.h)(0x62EE7947)()
-F (../device/drivers/hal_comp.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_comp.o -MD)
+F (../device/drivers/hal_common.h)(0x62EF7DAE)()
+F (../device/drivers/hal_comp.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_comp.o -MD)
 I (..\device\drivers\hal_comp.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -205,15 +255,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_comp.h)(0x62ECBF0E)()
-F (../device/drivers/hal_crc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_crc.o -MD)
+F (../device/drivers/hal_crc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_crc.o -MD)
 I (..\device\drivers\hal_crc.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -225,15 +279,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_crc.h)(0x62ECBF0E)()
-F (../device/drivers/hal_dac.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_dac.o -MD)
+F (../device/drivers/hal_dac.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_dac.o -MD)
 I (..\device\drivers\hal_dac.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -245,15 +303,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_dac.h)(0x62ECBF0E)()
-F (../device/drivers/hal_dma.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_dma.o -MD)
+F (../device/drivers/hal_dma.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_dma.o -MD)
 I (..\device\drivers\hal_dma.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -265,16 +327,20 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_dma.h)(0x62ECBF0E)()
 F (../device/drivers/hal_dma_request.h)(0x62ECBF0E)()
-F (../device/drivers/hal_exti.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_exti.o -MD)
+F (../device/drivers/hal_exti.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_exti.o -MD)
 I (..\device\drivers\hal_exti.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -286,15 +352,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_exti.h)(0x62ECBF0E)()
-F (../device/drivers/hal_flexcan.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_flexcan.o -MD)
+F (../device/drivers/hal_flexcan.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_flexcan.o -MD)
 I (..\device\drivers\hal_flexcan.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -306,15 +376,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_flexcan.h)(0x62ECBF0E)()
-F (../device/drivers/hal_fsmc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_fsmc.o -MD)
+F (../device/drivers/hal_fsmc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_fsmc.o -MD)
 I (..\device\drivers\hal_fsmc.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -326,15 +400,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_fsmc.h)(0x62ECBF0E)()
-F (../device/drivers/hal_gpio.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_gpio.o -MD)
+F (../device/drivers/hal_gpio.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_gpio.o -MD)
 I (..\device\drivers\hal_gpio.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -346,15 +424,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_gpio.h)(0x62ECBF0E)()
-F (../device/drivers/hal_i2c.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_i2c.o -MD)
+F (../device/drivers/hal_i2c.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_i2c.o -MD)
 I (..\device\drivers\hal_i2c.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -366,15 +448,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_i2c.h)(0x62ECBF0E)()
-F (../device/drivers/hal_iwdg.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_iwdg.o -MD)
+F (../device/drivers/hal_iwdg.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_iwdg.o -MD)
 I (..\device\drivers\hal_iwdg.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -386,15 +472,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_iwdg.h)(0x62ECBF0E)()
-F (../device/drivers/hal_lptim.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_lptim.o -MD)
+F (../device/drivers/hal_lptim.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_lptim.o -MD)
 I (..\device\drivers\hal_lptim.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -406,15 +496,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_lptim.h)(0x62ECBF0E)()
-F (../device/drivers/hal_lpuart.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_lpuart.o -MD)
+F (../device/drivers/hal_lpuart.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_lpuart.o -MD)
 I (..\device\drivers\hal_lpuart.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -426,15 +520,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_lpuart.h)(0x62ECBF0E)()
-F (../device/drivers/hal_mds.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_mds.o -MD)
+F (../device/drivers/hal_mds.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_mds.o -MD)
 I (..\device\drivers\hal_mds.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -446,17 +544,21 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_mds_remap.h)(0x62ECBF0E)
 F (../device/drivers/hal_mds.h)(0x62ECBF0E)()
 F (../device/drivers/hal_mds_remap.h)(0x62ECBF0E)()
-F (../device/drivers/hal_power.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_power.o -MD)
+F (../device/drivers/hal_power.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_power.o -MD)
 I (..\device\drivers\hal_power.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -468,16 +570,20 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_pwr.h)(0x62ECBF0E)
 F (../device/drivers/hal_power.h)(0x62ECBF0E)()
-F (../device/drivers/hal_pwr.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_pwr.o -MD)
+F (../device/drivers/hal_pwr.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_pwr.o -MD)
 I (..\device\drivers\hal_pwr.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -489,15 +595,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_pwr.h)(0x62ECBF0E)()
-F (../device/drivers/hal_qspi.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_qspi.o -MD)
+F (../device/drivers/hal_qspi.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_qspi.o -MD)
 I (..\device\drivers\hal_qspi.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -509,14 +619,18 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_qspi.h)(0x62ECBF0E)()
-F (../device/drivers/hal_rcc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_rcc.o -MD)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+F (../device/drivers/hal_rcc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_rcc.o -MD)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -528,16 +642,20 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 F (../device/drivers/hal_rcc.h)(0x62ECBF0E)()
-F (../device/drivers/hal_rtc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_rtc.o -MD)
+F (../device/drivers/hal_rtc.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_rtc.o -MD)
 I (..\device\drivers\hal_rtc.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -549,16 +667,20 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_rcc.h)(0x62ECBF0E)
 F (../device/drivers/hal_rtc.h)(0x62ECBF0E)()
-F (../device/drivers/hal_spi.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_spi.o -MD)
+F (../device/drivers/hal_spi.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_spi.o -MD)
 I (..\device\drivers\hal_spi.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -570,15 +692,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_spi.h)(0x62ECBF0E)()
-F (../device/drivers/hal_syscfg.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_syscfg.o -MD)
+F (../device/drivers/hal_syscfg.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_syscfg.o -MD)
 I (..\device\drivers\hal_syscfg.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -590,15 +716,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_syscfg.h)(0x62ECBF0E)()
-F (../device/drivers/hal_tim.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_tim.o -MD)
+F (../device/drivers/hal_tim.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_tim.o -MD)
 I (..\device\drivers\hal_tim.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -610,15 +740,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_tim.h)(0x62ECBF0E)()
-F (../device/drivers/hal_uart.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_uart.o -MD)
+F (../device/drivers/hal_uart.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_uart.o -MD)
 I (..\device\drivers\hal_uart.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -630,15 +764,19 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_uart.h)(0x62ECBF0E)()
-F (../device/drivers/hal_usb.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_usb.o -MD)
+F (../device/drivers/hal_usb.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_usb.o -MD)
 I (..\device\drivers\hal_usb.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -650,17 +788,21 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 I (..\device\drivers\hal_usb_bdt.h)(0x62ECBF0E)
 F (../device/drivers/hal_usb.h)(0x62ECBF0E)()
 F (../device/drivers/hal_usb_bdt.h)(0x62ECBF0E)()
-F (../device/drivers/hal_wwdg.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/hal_wwdg.o -MD)
+F (../device/drivers/hal_wwdg.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/hal_wwdg.o -MD)
 I (..\device\drivers\hal_wwdg.h)(0x62ECBF0E)
-I (..\device\drivers\hal_common.h)(0x62EE7947)
+I (..\device\drivers\hal_common.h)(0x62EF7DAE)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -672,13 +814,16 @@ I (D:\Keil\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
 I (..\device\CMSIS\Include\mpu_armv8.h)(0x61EE36BE)
 I (..\device\mm32f5277e_features.h)(0x62ECBF0E)
 I (..\device\system_mm32f5277e.h)(0x62ECBF0E)
+I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
+I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\board\board_it.h)(0x62EE7709)
 I (..\application\Scheduler.h)(0x62EE78E8)
+I (..\application\mp3.h)(0x62EF7C9F)
 F (../device/drivers/hal_wwdg.h)(0x62ECBF0E)()
 F (../device/hal_device_registers.h)(0x62ECBF0E)()
 F (../device/mm32f5277e.h)(0x62ECBF0E)()
 F (../device/mm32f5277e_features.h)(0x62ECBF0E)()
-F (../device/system_mm32f5277e.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/system_mm32f5277e.o -MD)
+F (../device/system_mm32f5277e.c)(0x62ECBF0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/system_mm32f5277e.o -MD)
 I (..\device\hal_device_registers.h)(0x62ECBF0E)
 I (..\device\mm32f5277e.h)(0x62ECBF0E)
 I (..\device\CMSIS\Include\core_star.h)(0x62B3C1DC)
@@ -695,14 +840,14 @@ F (../device/system_mm32f5277e.h)(0x62ECBF0E)()
 F (../device/mdk/startup_mm32f5277e.S)(0x62ECBF0E)(--target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -masm=gnu -c-gdwarf-4 -D__MICROLIB-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION=537 -DMM32F5277E9P-o ./objects/startup_mm32f5277e.o)
 F (../components/sdspi/src/sdmmc_spec.h)(0x6283910A)()
 F (../components/sdspi/src/sdspi.h)(0x6283910A)()
-F (../components/sdspi/src/sdspi.c)(0x6283910A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/sdspi.o -MD)
+F (../components/sdspi/src/sdspi.c)(0x6283910A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/sdspi.o -MD)
 I (D:\Keil\ARM\ARMCLANG\include\assert.h)(0x625260D6)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
 I (..\components\sdspi\src\sdspi.h)(0x6283910A)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (..\components\sdspi\src\sdmmc_spec.h)(0x6283910A)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
-F (..\components\ff14b\source\diskio.c)(0x62EE5A17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/diskio.o -MD)
+F (..\components\ff14b\source\diskio.c)(0x62EE5A17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/diskio.o -MD)
 I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
@@ -710,18 +855,106 @@ I (..\components\ff14b\source\diskio.h)(0x61EE36BE)
 I (..\components\sdspi\src\sdspi.h)(0x6283910A)
 I (..\components\sdspi\src\sdmmc_spec.h)(0x6283910A)
 I (D:\Keil\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
-F (..\components\ff14b\source\ff.c)(0x61EE36BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/ff.o -MD)
+F (..\components\ff14b\source\ff.c)(0x61EE36BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/ff.o -MD)
 I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
 I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
 I (..\components\ff14b\source\diskio.h)(0x61EE36BE)
 I (D:\Keil\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
-F (..\components\ff14b\source\ffsystem.c)(0x61EE36BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/ffsystem.o -MD)
+F (..\components\ff14b\source\ffsystem.c)(0x61EE36BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/ffsystem.o -MD)
 I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
-F (..\components\ff14b\source\ffunicode.c)(0x61EE36BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270-o ./objects/ffunicode.o -MD)
+F (..\components\ff14b\source\ffunicode.c)(0x61EE36BE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/ffunicode.o -MD)
 I (..\components\ff14b\source\ff.h)(0x61EE36BE)
 I (..\components\ff14b\source\ffconf.h)(0x62ECBFA6)
 I (D:\Keil\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+F (..\components\libmad-0.15.1b\bit.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/bit.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (D:\Keil\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\components\libmad-0.15.1b\bit.h)(0x4010EC4C)
+F (..\components\libmad-0.15.1b\decoder.c)(0x60DC2052)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/decoder.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (D:\Keil\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (..\components\libmad-0.15.1b\stream.h)(0x60DC17DA)
+I (..\components\libmad-0.15.1b\bit.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\frame.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\fixed.h)(0x4031761B)
+I (..\components\libmad-0.15.1b\timer.h)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\synth.h)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\decoder.h)(0x60DC1A6E)
+F (..\components\libmad-0.15.1b\fixed.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/fixed.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (..\components\libmad-0.15.1b\fixed.h)(0x4031761B)
+F (..\components\libmad-0.15.1b\frame.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/frame.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (D:\Keil\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (..\components\libmad-0.15.1b\bit.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\stream.h)(0x60DC17DA)
+I (..\components\libmad-0.15.1b\frame.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\fixed.h)(0x4031761B)
+I (..\components\libmad-0.15.1b\timer.h)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\layer12.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\layer3.h)(0x60DC1B6F)
+F (..\components\libmad-0.15.1b\huffman.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/huffman.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (..\components\libmad-0.15.1b\huffman.h)(0x4010EC4C)
+F (..\components\libmad-0.15.1b\layer3.c)(0x60DC1B61)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/layer3.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (D:\Keil\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Keil\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\components\libmad-0.15.1b\fixed.h)(0x4031761B)
+I (..\components\libmad-0.15.1b\bit.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\stream.h)(0x60DC17DA)
+I (..\components\libmad-0.15.1b\frame.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\timer.h)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\huffman.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\layer3.h)(0x60DC1B6F)
+I (..\components\libmad-0.15.1b\rq_table.dat)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\imdct_s.dat)(0x4010EC4C)
+F (..\components\libmad-0.15.1b\layer12.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/layer12.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (D:\Keil\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\components\libmad-0.15.1b\fixed.h)(0x4031761B)
+I (..\components\libmad-0.15.1b\bit.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\stream.h)(0x60DC17DA)
+I (..\components\libmad-0.15.1b\frame.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\timer.h)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\layer12.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\sf_table.dat)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\qc_table.dat)(0x4010EC4C)
+F (..\components\libmad-0.15.1b\stream.c)(0x60DC1BE6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/stream.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (D:\Keil\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (..\components\libmad-0.15.1b\bit.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\stream.h)(0x60DC17DA)
+F (..\components\libmad-0.15.1b\synth.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/synth.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (..\components\libmad-0.15.1b\fixed.h)(0x4031761B)
+I (..\components\libmad-0.15.1b\frame.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\timer.h)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\stream.h)(0x60DC17DA)
+I (..\components\libmad-0.15.1b\bit.h)(0x4010EC4C)
+I (..\components\libmad-0.15.1b\synth.h)(0x4010EC4D)
+I (..\components\libmad-0.15.1b\D.dat)(0x4010EC4C)
+F (..\components\libmad-0.15.1b\timer.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/timer.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (D:\Keil\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (..\components\libmad-0.15.1b\timer.h)(0x4010EC4D)
+F (..\components\libmad-0.15.1b\version.c)(0x60DC18EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=star-mc1 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../board -I ../device/drivers -I .. -I ../components/sdspi/src -I ../device/CMSIS/Include -I ../device -I ../application -I ../components/ff14b/source -I ../application -I ../components/libmad-0.15.1b-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F527x/Include-ID:/Keil/Packs/MindMotion/MM32F5277E_DFP/0.0.5/Device/MM32F5277E-D__UVISION_VERSION="537" -DMM32F5277E9P -DAPP_SDSPI_BASIC -DNDEBUG -DBRD_PLUS_F5270 -DFPM_DEFAULT -DHAVE_CONFIG_H-o ./objects/version.o -MD)
+I (..\components\libmad-0.15.1b\libmad_config.h)(0x60DC1997)
+I (..\components\libmad-0.15.1b\global.h)(0x60DADE1D)
+I (..\components\libmad-0.15.1b\version.h)(0x4010EC4D)

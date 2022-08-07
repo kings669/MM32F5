@@ -1,6 +1,7 @@
 --cpu=Star-MC1
 ".\objects\main.o"
 ".\objects\scheduler.o"
+".\objects\mp3.o"
 ".\objects\board_init.o"
 ".\objects\clock_init.o"
 ".\objects\pin_init.o"
@@ -38,6 +39,17 @@
 ".\objects\ff.o"
 ".\objects\ffsystem.o"
 ".\objects\ffunicode.o"
+".\objects\bit.o"
+".\objects\decoder.o"
+".\objects\fixed.o"
+".\objects\frame.o"
+".\objects\huffman.o"
+".\objects\layer3.o"
+".\objects\layer12.o"
+".\objects\stream.o"
+".\objects\synth.o"
+".\objects\timer.o"
+".\objects\version.o"
 --library_type=microlib --strict --scatter "../device/mdk/linker/mm32f5277e_flash.scf"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
