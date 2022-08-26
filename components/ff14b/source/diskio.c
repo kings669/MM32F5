@@ -53,6 +53,7 @@ DSTATUS disk_status (
 
 		return stat;
 	}
+	
 	return STA_NOINIT;
 }
 

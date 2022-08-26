@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 MindMotion Microelectronics Co., Ltd.
+ * Copyright 2021 MindMotion Microelectronics Co., Ltd.
  * All rights reserved.
  *
  * SPDX-License-Identifier: BSD-3-Clause
@@ -45,7 +45,6 @@ void SPI_InitMaster(SPI_Type * SPIx, SPI_Master_Init_Type * init)
                                   | SPI_I2S_CCTL_CPOL_MASK
                                   | SPI_I2S_CCTL_LSBFE_MASK
                                   | SPI_I2S_CCTL_SPILEN_MASK
-                                  | SPI_I2S_CCTL_TISEL_MASK
                                   );
 
     /* Master. */
@@ -64,6 +63,12 @@ void SPI_InitMaster(SPI_Type * SPIx, SPI_Master_Init_Type * init)
 
         default:
             break;
+    }
+
+    /* AutoCS. */
+    if (init->AutoCS)
+    {
+        gctl |= SPI_I2S_GCTL_NSS_MASK;
     }
 
     /* Interrupts. Always enable the global interrupt. The specific events are controlled by each bits in INTEN register. */
@@ -85,7 +90,7 @@ void SPI_InitMaster(SPI_Type * SPIx, SPI_Master_Init_Type * init)
 
     /* CPOL & CPHA. */
     cctl |= ( (SPI_I2S_CCTL_CPHA_MASK | SPI_I2S_CCTL_CPOL_MASK)
-            & ((init->PolarityPhase) << SPI_I2S_CCTL_CPHA_SHIFT)
+            & ((init->PolPha) << SPI_I2S_CCTL_CPHA_SHIFT)
             );
 
     /* MSB. */
@@ -94,23 +99,12 @@ void SPI_InitMaster(SPI_Type * SPIx, SPI_Master_Init_Type * init)
         cctl |= SPI_I2S_CCTL_LSBFE_MASK;
     }
 
-    /* CS control. */
-    if (SPI_CSMode_Auto == init->CSMode)  /* CS output in master mode controlled by hardware. */
-    {
-        gctl |= SPI_I2S_GCTL_NSS_MASK;
-    }
-    else if (SPI_CSMode_TI == init->CSMode)
-    {
-        cctl |= SPI_I2S_CCTL_TISEL_MASK;
-    }
-
     SPIx->GCTL = gctl;
     SPIx->CCTL = cctl;
     SPIx->EXTCTL = extctl;
 
     /* BaudRate. */
     SPI_SetBaudrate(SPIx, init->ClockFreqHz, init->BaudRate);
-
 }
 
 void SPI_InitSlave(SPI_Type * SPIx, SPI_Slave_Init_Type * init)
@@ -144,6 +138,12 @@ void SPI_InitSlave(SPI_Type * SPIx, SPI_Slave_Init_Type * init)
             break;
     }
 
+    /* AutoCS. */
+    if (init->AutoCS)
+    {
+        gctl |= SPI_I2S_GCTL_NSS_MASK;
+    }
+
     /* Interrupts. Always enable the global interrupt. The specific events are controlled by each bits in INTEN register. */
     gctl |= SPI_I2S_GCTL_INTEN_MASK;
 
@@ -163,23 +163,13 @@ void SPI_InitSlave(SPI_Type * SPIx, SPI_Slave_Init_Type * init)
 
     /* CPOL & CPHA. */
     cctl |= ( (SPI_I2S_CCTL_CPHA_MASK | SPI_I2S_CCTL_CPOL_MASK)
-            & ((init->PolarityPhase) << SPI_I2S_CCTL_CPHA_SHIFT)
+            & ((init->PolPha) << SPI_I2S_CCTL_CPHA_SHIFT)
             );
 
     /* MSB. */
     if (init->LSB)
     {
         cctl |= SPI_I2S_CCTL_LSBFE_MASK;
-    }
-
-    /* CS control. */
-    if (SPI_CSMode_Auto == init->CSMode)  /* CS output in master mode controlled by hardware. */
-    {
-        gctl |= SPI_I2S_GCTL_NSS_MASK;
-    }
-    else if (SPI_CSMode_TI == init->CSMode)
-    {
-        cctl |= SPI_I2S_CCTL_TISEL_MASK;
     }
 
     SPIx->GCTL = gctl;
@@ -273,11 +263,11 @@ void SPI_SetRxDataNum(SPI_Type * SPIx, uint16_t number)
     SPIx->RXDNR = number;
 }
 
+
 void SPI_SetPadMux(SPI_Type * SPIx, SPI_PadMux_Type opt)
 {
     SPIx->GCTL = ( (SPIx->GCTL &~ SPI_I2S_GCTL_PADSEL_MASK)
                  | SPI_I2S_GCTL_PADSEL(opt)
                  );
 }
-
 /* EOF. */

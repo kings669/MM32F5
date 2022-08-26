@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 MindMotion Microelectronics Co., Ltd.
+ * Copyright 2022 MindMotion Microelectronics Co., Ltd.
  * All rights reserved.
  *
  * SPDX-License-Identifier: BSD-3-Clause
@@ -18,7 +18,7 @@
 /*!
  * @brief COMP driver version number.
  */
-#define COMP_DRIVER_VERSION 1u /*!< COMP_0. */
+#define COMP_DRIVER_VERSION 1u /*!< COMP_1. */
 
 /*!
  * @brief COMP number.
@@ -32,14 +32,14 @@
  */
 typedef enum
 {
-    COMP_OutFilter_1   = 0x00u, /*!< 1   PCLK filter. */
-    COMP_OutFilter_2   = 0x01u, /*!< 2   PCLK filter. */
-    COMP_OutFilter_4   = 0x02u, /*!< 4   PCLK filter. */
-    COMP_OutFilter_8   = 0x03u, /*!< 8   PCLK filter. */
-    COMP_OutFilter_16  = 0x04u, /*!< 16  PCLK filter. */
-    COMP_OutFilter_32  = 0x05u, /*!< 32  PCLK filter. */
-    COMP_OutFilter_64  = 0x06u, /*!< 64  PCLK filter. */
-    COMP_OutFilter_128 = 0x07u, /*!< 128 PCLK filter. */
+    COMP_OutFilter_1   = 0x00, /*!< 1   PCLK filter. */
+    COMP_OutFilter_2   = 0x01, /*!< 2   PCLK filter. */
+    COMP_OutFilter_4   = 0x02, /*!< 4   PCLK filter. */
+    COMP_OutFilter_8   = 0x03, /*!< 8   PCLK filter. */
+    COMP_OutFilter_16  = 0x04, /*!< 16  PCLK filter. */
+    COMP_OutFilter_32  = 0x05, /*!< 32  PCLK filter. */
+    COMP_OutFilter_64  = 0x06, /*!< 64  PCLK filter. */
+    COMP_OutFilter_128 = 0x07, /*!< 128 PCLK filter. */
 } COMP_OutFilter_Type;
 
 /*!
@@ -49,10 +49,10 @@ typedef enum
  */
 typedef enum
 {
-    COMP_Hysteresis_Alt0 = 0x00u, /*!< Hysteresis Alt 0. */
-    COMP_Hysteresis_Alt1 = 0x01u, /*!< Hysteresis Alt 1. */
-    COMP_Hysteresis_Alt2 = 0x02u, /*!< Hysteresis Alt 2. */
-    COMP_Hysteresis_Alt3 = 0x03u, /*!< Hysteresis Alt 3. */
+    COMP_Hysteresis_Alt0 = 0x00, /*!< Hysteresis alt 0. */
+    COMP_Hysteresis_Alt1 = 0x01, /*!< Hysteresis alt 1. */
+    COMP_Hysteresis_Alt2 = 0x02, /*!< Hysteresis alt 2. */
+    COMP_Hysteresis_Alt3 = 0x03, /*!< Hysteresis alt 3. */
 } COMP_Hysteresis_Type;
 
 /*!
@@ -60,29 +60,34 @@ typedef enum
  */
 typedef enum
 {
-    COMP_OutMux_None = 0x00u,  /*!< Not output to other peripheral input. */
-    COMP_OutMux_Alt0 = 0x02u,  /*!< Output Mux 0. */
-    COMP_OutMux_Alt1 = 0x04u,  /*!< Output Mux 1. */
-    COMP_OutMux_Alt2 = 0x06u,  /*!< Output Mux 2. */
-    COMP_OutMux_Alt3 = 0x07u,  /*!< Output Mux 3. */
-    COMP_OutMux_Alt4 = 0x08u,  /*!< Output Mux 4. */
-    COMP_OutMux_Alt5 = 0x09u,  /*!< Output Mux 5. */
-    COMP_OutMux_Alt6 = 0x0Au,  /*!< Output Mux 6. */
-    COMP_OutMux_Alt7 = 0x0Bu,  /*!< Output Mux 7. */
-    COMP_OutMux_Alt8 = 0x0Fu,  /*!< Output Mux 8. */
-} COMP_OutMux_Type;
+    COMP_OutMux_Alt0  = 0x00,  /*!< Output mux alt 0. */
+    COMP_OutMux_Alt1  = 0x01,  /*!< Output mux alt 1. */
+    COMP_OutMux_Alt2  = 0x02,  /*!< Output mux alt 2. */
+    COMP_OutMux_Alt3  = 0x03,  /*!< Output mux alt 3. */
+    COMP_OutMux_Alt4  = 0x04,  /*!< Output mux alt 4. */
+    COMP_OutMux_Alt5  = 0x05,  /*!< Output mux alt 5. */
+    COMP_OutMux_Alt6  = 0x06,  /*!< Output mux alt 6. */
+    COMP_OutMux_Alt7  = 0x07,  /*!< Output mux alt 7. */
+    COMP_OutMux_Alt8  = 0x08,  /*!< Output mux alt 8. */
+    COMP_OutMux_Alt9  = 0x09,  /*!< Output mux alt 0. */
+    COMP_OutMux_Alt11 = 0x0A,  /*!< Output mux alt 1. */
+    COMP_OutMux_Alt12 = 0x0B,  /*!< Output mux alt 2. */
+    COMP_OutMux_Alt13 = 0x0C,  /*!< Output mux alt 3. */
+    COMP_OutMux_Alt14 = 0x0D,  /*!< Output mux alt 4. */
+    COMP_OutMux_Alt15 = 0x0E,  /*!< Output mux alt 5. */
+}   COMP_OutMux_Type;
 
 /*!
  * @brief COMP input Mux type.
  */
 typedef enum
 {
-    COMP_InMux_Alt0 = 0x00u, /*!< Input Mux 0. */
-    COMP_InMux_Alt1 = 0x01u, /*!< Input Mux 1. */
-    COMP_InMux_Alt2 = 0x02u, /*!< Input Mux 2. */
-    COMP_InMux_Alt3 = 0x03u, /*!< Input Mux 3. */
-    COMP_InMux_Alt4 = 0x04u, /*!< Input Mux 4. */
-    COMP_InMux_Alt5 = 0x05u, /*!< Input Mux 5. */
+    COMP_InMux_Alt0 = 0x00, /*!< Input mux 0. */
+    COMP_InMux_Alt1 = 0x01, /*!< Input mux 1. */
+    COMP_InMux_Alt2 = 0x02, /*!< Input mux 2. */
+    COMP_InMux_Alt3 = 0x03, /*!< Input mux 3. */
+    COMP_InMux_Alt4 = 0x04, /*!< Input mux 4. */
+    COMP_InMux_Alt5 = 0x05, /*!< Input mux 5. */
 } COMP_InMux_Type;
 
 /*!
@@ -90,10 +95,10 @@ typedef enum
  */
 typedef enum
 {
-    COMP_Speed_High    = 0x00u, /*!< High speed, high power. */
-    COMP_Speed_Middle  = 0x01u, /*!< Middle speed, middle power. */
-    COMP_Speed_Low     = 0x02u, /*!< Low speed, low power. */
-    COMP_Speed_DeepLow = 0x03u, /*!< Deep low speed, deep low power. */
+    COMP_Speed_High    = 0x00, /*!< High speed. */
+    COMP_Speed_Middle  = 0x01, /*!< Middle speed. */
+    COMP_Speed_Low     = 0x02, /*!< Low speed. */
+    COMP_Speed_DeepLow = 0x03, /*!< Deep low speed. */
 } COMP_Speed_Type;
 
 /*!
@@ -101,8 +106,8 @@ typedef enum
  */
 typedef enum
 {
-    COMP_ExtVrefSource_VREFINT = 0x00u,  /*!< Internal reference voltage. */
-    COMP_ExtVrefSource_VDDA    = 0x01u,  /*!< VDDA voltage.   */
+    COMP_ExtVrefSource_VREFINT = 0x00,  /*!< Internal reference voltage. */
+    COMP_ExtVrefSource_VDDA    = 0x01,  /*!< VDDA voltage. */
 } COMP_ExtVrefSource_Type;
 
 /*!
@@ -110,22 +115,22 @@ typedef enum
  */
 typedef enum
 {
-    COMP_ExtVrefVolt_Alt0  = 0x00u,  /*!< External reference voltage Alt 0. */
-    COMP_ExtVrefVolt_Alt1  = 0x01u,  /*!< External reference voltage Alt 1. */
-    COMP_ExtVrefVolt_Alt2  = 0x02u,  /*!< External reference voltage Alt 2. */
-    COMP_ExtVrefVolt_Alt3  = 0x03u,  /*!< External reference voltage Alt 3. */
-    COMP_ExtVrefVolt_Alt4  = 0x04u,  /*!< External reference voltage Alt 4. */
-    COMP_ExtVrefVolt_Alt5  = 0x05u,  /*!< External reference voltage Alt 5. */
-    COMP_ExtVrefVolt_Alt6  = 0x06u,  /*!< External reference voltage Alt 6. */
-    COMP_ExtVrefVolt_Alt7  = 0x07u,  /*!< External reference voltage Alt 7. */
-    COMP_ExtVrefVolt_Alt8  = 0x08u,  /*!< External reference voltage Alt 8. */
-    COMP_ExtVrefVolt_Alt9  = 0x09u,  /*!< External reference voltage Alt 9. */
-    COMP_ExtVrefVolt_Alt10 = 0x0Au,  /*!< External reference voltage Alt 10. */
-    COMP_ExtVrefVolt_Alt11 = 0x0Bu,  /*!< External reference voltage Alt 11. */
-    COMP_ExtVrefVolt_Alt12 = 0x0Cu,  /*!< External reference voltage Alt 12. */
-    COMP_ExtVrefVolt_Alt13 = 0x0Du,  /*!< External reference voltage Alt 13. */
-    COMP_ExtVrefVolt_Alt14 = 0x0Eu,  /*!< External reference voltage Alt 14. */
-    COMP_ExtVrefVolt_Alt15 = 0x0Fu,  /*!< External reference voltage Alt 15. */
+    COMP_ExtVrefVolt_Alt0  = 0x00, /*!< External reference voltage alt 0. */
+    COMP_ExtVrefVolt_Alt1  = 0x01, /*!< External reference voltage alt 1. */
+    COMP_ExtVrefVolt_Alt2  = 0x02, /*!< External reference voltage alt 2. */
+    COMP_ExtVrefVolt_Alt3  = 0x03, /*!< External reference voltage alt 3. */
+    COMP_ExtVrefVolt_Alt4  = 0x04, /*!< External reference voltage alt 4. */
+    COMP_ExtVrefVolt_Alt5  = 0x05, /*!< External reference voltage alt 5. */
+    COMP_ExtVrefVolt_Alt6  = 0x06, /*!< External reference voltage alt 6. */
+    COMP_ExtVrefVolt_Alt7  = 0x07, /*!< External reference voltage alt 7. */
+    COMP_ExtVrefVolt_Alt8  = 0x08, /*!< External reference voltage alt 8. */
+    COMP_ExtVrefVolt_Alt9  = 0x09, /*!< External reference voltage alt 9. */
+    COMP_ExtVrefVolt_Alt10 = 0x0A, /*!< External reference voltage alt 10. */
+    COMP_ExtVrefVolt_Alt11 = 0x0B, /*!< External reference voltage alt 11. */
+    COMP_ExtVrefVolt_Alt12 = 0x0C, /*!< External reference voltage alt 12. */
+    COMP_ExtVrefVolt_Alt13 = 0x0D, /*!< External reference voltage alt 13. */
+    COMP_ExtVrefVolt_Alt14 = 0x0E, /*!< External reference voltage alt 14. */
+    COMP_ExtVrefVolt_Alt15 = 0x0F, /*!< External reference voltage alt 15. */
 } COMP_ExtVrefVolt_Type;
 
 /*!
@@ -135,14 +140,14 @@ typedef enum
  */
 typedef enum
 {
-    COMP_RoundRobinPeriod_1   = 0x00u,  /*!< Wait 1   PCLK2 to compare next channel. */
-    COMP_RoundRobinPeriod_2   = 0x01u,  /*!< Wait 2   PCLK2 to compare next channel. */
-    COMP_RoundRobinPeriod_4   = 0x02u,  /*!< Wait 4   PCLK2 to compare next channel. */
-    COMP_RoundRobinPeriod_8   = 0x03u,  /*!< Wait 8   PCLK2 to compare next channel. */
-    COMP_RoundRobinPeriod_16  = 0x04u,  /*!< Wait 16  PCLK2 to compare next channel. */
-    COMP_RoundRobinPeriod_32  = 0x05u,  /*!< Wait 32  PCLK2 to compare next channel. */
-    COMP_RoundRobinPeriod_64  = 0x06u,  /*!< Wait 64  PCLK2 to compare next channel. */
-    COMP_RoundRobinPeriod_128 = 0x07u,  /*!< Wait 128 PCLK2 to compare next channel. */
+    COMP_RoundRobinPeriod_1   = 0x00, /*!< Wait 1   PCLK to compare next channel. */
+    COMP_RoundRobinPeriod_2   = 0x01, /*!< Wait 2   PCLK to compare next channel. */
+    COMP_RoundRobinPeriod_4   = 0x02, /*!< Wait 4   PCLK to compare next channel. */
+    COMP_RoundRobinPeriod_8   = 0x03, /*!< Wait 8   PCLK to compare next channel. */
+    COMP_RoundRobinPeriod_16  = 0x04, /*!< Wait 16  PCLK to compare next channel. */
+    COMP_RoundRobinPeriod_32  = 0x05, /*!< Wait 32  PCLK to compare next channel. */
+    COMP_RoundRobinPeriod_64  = 0x06, /*!< Wait 64  PCLK to compare next channel. */
+    COMP_RoundRobinPeriod_128 = 0x07, /*!< Wait 128 PCLK to compare next channel. */
 } COMP_RoundRobinPeriod_Type;
 
 /*!
@@ -150,8 +155,8 @@ typedef enum
  */
 typedef enum
 {
-    COMP_RoundRobinChnGroup_Alt0 = 0x00u, /*!< Compare the positive input 1 & 2.    */
-    COMP_RoundRobinChnGroup_Alt1 = 0x01u, /*!< Compare the positive input 1, 2 & 3. */
+    COMP_RoundRobinChnGroup_Alt0 = 0x00, /*!< Compare the positive input 1 & 2.    */
+    COMP_RoundRobinChnGroup_Alt1 = 0x01, /*!< Compare the positive input 1, 2 & 3. */
 } COMP_RoundRobinChnGroup_Type;
 
 /*!
@@ -180,9 +185,9 @@ typedef struct
  */
 typedef struct
 {
-    COMP_RoundRobinPeriod_Type   Period;    /*!< Specify the round robin period.  */
-    bool                         InvInFix;  /*!< Specify the nagetive input fix.  */
-    COMP_RoundRobinChnGroup_Type ChnGroup;  /*!< Specify the round robin channel. */
+    COMP_RoundRobinPeriod_Type   Period;         /*!< Specify the round robin period.  */
+    bool                         EnableInvInFix; /*!< Specify the nagetive input fix.  */
+    COMP_RoundRobinChnGroup_Type ChnGroup;       /*!< Specify the round robin channel. */
 } COMP_RoundRobinConf_Type;
 
 /*!

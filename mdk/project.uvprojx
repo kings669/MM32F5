@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>Target 1</TargetName>
+      <TargetName>MM32F5</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>6180000::V6.18::ARMCLANG</pCCUsed>
@@ -18,12 +18,12 @@
           <Vendor>MindMotion</Vendor>
           <PackID>MindMotion.MM32F5277E_DFP.0.0.5</PackID>
           <PackURL>http://www.mindmotion.com.cn/Download/MDK_KEIL/</PackURL>
-          <Cpu>IRAM(0x30000000,0x1C000) IROM(0x08000000,0x40000) CPUTYPE("Star-MC1") FPU3(SFPU) DSP CLOCK(12000000) ELITTLE</Cpu>
+          <Cpu>IRAM(0x30000000,0x1C000) IROM(0x08000000,0x40000) CPUTYPE("STAR-MC1") FPU3(SFPU) DSP CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
           <FlashDriverDll>UL2V8M(-S0 -C0 -P0 -FD30000000 -FC1000 -FN1 -FF0MM32F5270_256 -FS08000000 -FL040000 -FP0($$Device:MM32F5277E9P$Flash\MM32F5270_256.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:MM32F5277E9P$Device\MM32F5277E\hal_device_registers.h</RegisterFile>
+          <RegisterFile>$$Device:MM32F5277E9P$Device\MM32F527x\Include\mm32_device.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -134,7 +134,7 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <DriverSelection>4102</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2V8M.DLL</Flash2>
@@ -174,7 +174,7 @@
             <AdsLsxf>1</AdsLsxf>
             <RvctClst>0</RvctClst>
             <GenPPlst>0</GenPPlst>
-            <AdsCpuType>"Star-MC1"</AdsCpuType>
+            <AdsCpuType>"STAR-MC1"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
             <mOS>0</mOS>
             <uocRom>0</uocRom>
@@ -191,7 +191,7 @@
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
             <useUlib>1</useUlib>
-            <EndSel>0</EndSel>
+            <EndSel>1</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>APP_SDSPI_BASIC NDEBUG BRD_PLUS_F5270,FPM_DEFAULT,HAVE_CONFIG_H</Define>
               <Undefine></Undefine>
-              <IncludePath>../board;../device/drivers;..;../components/sdspi/src;../device/CMSIS/Include;../device;../application;..\components\ff14b\source;..\application;..\components\libmad-0.15.1b</IncludePath>
+              <IncludePath>../board;../device/drivers;..;../components/sdspi/src;../device/CMSIS/Include;../device;../application;..\components\ff14b\source;..\application;..\components\libmad-0.15.1b;..\components\libmad-0.15.1b\msvc++</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -395,6 +395,16 @@
               <FilePath>..\application\scheduler.c</FilePath>
             </File>
             <File>
+              <FileName>audio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\application\audio.c</FilePath>
+            </File>
+            <File>
+              <FileName>wav.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\application\wav.c</FilePath>
+            </File>
+            <File>
               <FileName>mp3.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\application\mp3.c</FilePath>
@@ -425,6 +435,11 @@
               <FilePath>../board/clock_init.h</FilePath>
             </File>
             <File>
+              <FileName>board_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\board_it.c</FilePath>
+            </File>
+            <File>
               <FileName>pin_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>../board/pin_init.c</FilePath>
@@ -435,19 +450,14 @@
               <FilePath>../board/pin_init.h</FilePath>
             </File>
             <File>
-              <FileName>board_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\board\board_it.c</FilePath>
-            </File>
-            <File>
-              <FileName>board_it.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\board\board_it.h</FilePath>
-            </File>
-            <File>
               <FileName>sdspi_port.c</FileName>
               <FileType>1</FileType>
               <FilePath>../board/sdspi_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2s_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\i2s_port.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -563,6 +573,16 @@
               <FileName>hal_i2c.h</FileName>
               <FileType>5</FileType>
               <FilePath>../device/drivers/hal_i2c.h</FilePath>
+            </File>
+            <File>
+              <FileName>hal_i2s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../device/drivers/hal_i2s.c</FilePath>
+            </File>
+            <File>
+              <FileName>hal_i2s.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>../device/drivers/hal_i2s.h</FilePath>
             </File>
             <File>
               <FileName>hal_iwdg.c</FileName>
@@ -807,7 +827,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Libmad</GroupName>
+          <GroupName>libmad</GroupName>
           <Files>
             <File>
               <FileName>bit.c</FileName>
@@ -873,20 +893,7 @@
   <RTE>
     <apis/>
     <components/>
-    <files>
-      <file attr="config" category="header" name="components\finsh\finsh_config.h" version="3.1.5">
-        <instance index="0" removed="1">RTE\RTOS\finsh_config.h</instance>
-        <component Cbundle="RT-Thread" Cclass="RTOS" Cgroup="shell" Cvendor="RealThread" Cversion="3.1.5" condition="shell"/>
-        <package name="RT-Thread" schemaVersion="1.4" url="https://www.rt-thread.org/download/mdk/" vendor="RealThread" version="3.1.5"/>
-        <targetInfos/>
-      </file>
-      <file attr="config" category="source" name="components\finsh\finsh_port.c" version="3.1.5">
-        <instance index="0" removed="1">RTE\RTOS\finsh_port.c</instance>
-        <component Cbundle="RT-Thread" Cclass="RTOS" Cgroup="shell" Cvendor="RealThread" Cversion="3.1.5" condition="shell"/>
-        <package name="RT-Thread" schemaVersion="1.4" url="https://www.rt-thread.org/download/mdk/" vendor="RealThread" version="3.1.5"/>
-        <targetInfos/>
-      </file>
-    </files>
+    <files/>
   </RTE>
 
   <LayerInfo>

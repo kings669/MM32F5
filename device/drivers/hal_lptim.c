@@ -9,9 +9,9 @@
 
 void LPTIM_Init(LPTIM_Type * LPTIMx, LPTIM_Init_Type * init)
 {
-    LPTIMx->CFG = (LPTIMx->CFG & ~( LPTIM_CFG_TMODE_MASK | LPTIM_CFG_DICSEL_MASK | LPTIM_CFG_MODE_MASK) )
+    LPTIMx->CFG = (LPTIMx->CFG & ~( LPTIM_CFG_TMODE_MASK | LPTIM_CFG_DIVSEL_MASK | LPTIM_CFG_MODE_MASK) )
                 | LPTIM_CFG_TMODE(init->WorkMode) /* Setup the work mode. */
-                | LPTIM_CFG_DICSEL(init->Prescaler) /* Setup the prescaler. */
+                | LPTIM_CFG_DIVSEL(init->Prescaler) /* Setup the prescaler. */
                 | LPTIM_CFG_MODE(init->PeriodMode); /* Setup the period mode. */
 
     /* Setup the period value. */
@@ -52,9 +52,9 @@ void LPTIM_ClearInterruptStatus(LPTIM_Type * LPTIMx, uint32_t status)
 
 void LPTIM_EnableTriggerIn(LPTIM_Type * LPTIMx, LPTIM_TriggerInConf_Type * conf)
 {
-    LPTIMx->CFG = (LPTIMx->CFG & ~(LPTIM_CFG_TRIGSEL_MASK | LPTIM_CFG_FTLEN_MASK | LPTIM_CFG_TRIGCFG_MASK) )
+    LPTIMx->CFG = (LPTIMx->CFG & ~(LPTIM_CFG_TRIGSEL_MASK | LPTIM_CFG_FLTEN_MASK | LPTIM_CFG_TRIGCFG_MASK) )
                 | LPTIM_CFG_TRIGSEL(conf->Channel) /* Setup trigger input channel. */
-                | LPTIM_CFG_FTLEN(conf->EnableFilter) /* Setup the external trigger input filter. */
+                | LPTIM_CFG_FLTEN(conf->EnableFilter) /* Setup the external trigger input filter. */
                 | LPTIM_CFG_TRIGCFG(conf->TriggerInPolarity); /* Setup the trigger input polarity. */
 }
 

@@ -189,6 +189,9 @@ void TIM_EnableCompOutput(TIM_Type * TIMx, uint32_t channel, bool enable)
             case TIM_CHN_3:
                 TIMx->CCER |= TIM_CCER_CC3NE_MASK;
                 break;
+            case TIM_CHN_4:
+                TIMx->CCER |= TIM_CCER_CC4NE_MASK;
+                break;
             default:
                 break;
         }
@@ -205,6 +208,9 @@ void TIM_EnableCompOutput(TIM_Type * TIMx, uint32_t channel, bool enable)
                 break;
             case TIM_CHN_3:
                 TIMx->CCER &= ~ TIM_CCER_CC3NE_MASK;
+                break;
+            case TIM_CHN_4:
+                TIMx->CCER &= ~ TIM_CCER_CC4NE_MASK;
                 break;
             default:
                 break;

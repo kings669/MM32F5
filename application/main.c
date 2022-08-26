@@ -6,10 +6,11 @@
  */
 
 #include "board_init.h"
-#include "hal_common.h"
+#include "sdspi.h"
 #include "ffconf.h"
 #include "ff.h"
-
+#include "scheduler.h"
+#include "board_it.h"
 /*
  * Macros.
  */
@@ -17,21 +18,20 @@
 /*
  * Variables.
  */
- 
+
 FATFS fs;
 
 /*
  * Declerations.
  */
 void fatFs_init(void);
-void delay_init(uint32_t TICK_RATE_HZ);
-void delay_ms(uint16_t nms);
 /*
  * Functions.
  */
 int main(void)
 {
-		BOARD_Init();
+    BOARD_Init();
+		SysTick_Init();
 		printf("**********MM32F5270************\r\n");
 		printf(">BOARD_Init() Done!\r\n");
 		printf(">fatFs_init() Start...\r\n");
@@ -41,6 +41,8 @@ int main(void)
 		Scheduler_Setup();
 		printf(">Scheduler_Setup() Done!\r\n");
 		printf("**********Init END************\r\n");
+		AUDIO_Init();
+		printf("---------------Scheduler_Run-------------------\r\n");
     while (1)
     {
 			Scheduler_Run();
@@ -81,9 +83,6 @@ void fatFs_init(void)
 				while(1);
 		}
 }
-
-/*-----------------------------------------------------------*/
-
 
 /* EOF. */
 

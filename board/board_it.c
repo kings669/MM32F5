@@ -4,7 +4,7 @@ static uint64_t SysRunTimeMs = 0;
 static uint8_t fac_us = 0;
 static uint32_t fac_ms = 0;
 
-__attribute__((section(".RAM_D1"))) uint8_t D1_array[8] = {0,}; 
+//__attribute__((section(".RAM_D1"))) uint8_t D1_array[8] = {0,}; 
 
 void SysTick_Init(void)
 {

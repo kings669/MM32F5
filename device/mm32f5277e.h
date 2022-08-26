@@ -5922,13 +5922,13 @@ typedef struct {
  * @brief LPTIM_CFG Register Bit Definition
  */
 
-#define LPTIM_CFG_FTLEN_SHIFT                     (15)
-#define LPTIM_CFG_FTLEN_MASK                      (0x01U << LPTIM_CFG_FTLEN_SHIFT)
-#define LPTIM_CFG_FTLEN(x)                        (((uint32_t)(((uint32_t)(x)) << LPTIM_CFG_FTLEN_SHIFT)) & LPTIM_CFG_FTLEN_MASK)
+#define LPTIM_CFG_FLTEN_SHIFT                     (15)
+#define LPTIM_CFG_FLTEN_MASK                      (0x01U << LPTIM_CFG_FLTEN_SHIFT)
+#define LPTIM_CFG_FLTEN(x)                        (((uint32_t)(((uint32_t)(x)) << LPTIM_CFG_FLTEN_SHIFT)) & LPTIM_CFG_FLTEN_MASK)
 
-#define LPTIM_CFG_DICSEL_SHIFT                    (8)
-#define LPTIM_CFG_DICSEL_MASK                     (0x7U << LPTIM_CFG_DICSEL_SHIFT)
-#define LPTIM_CFG_DICSEL(x)                       (((uint32_t)(((uint32_t)(x)) << LPTIM_CFG_DICSEL_SHIFT)) & LPTIM_CFG_DICSEL_MASK)
+#define LPTIM_CFG_DIVSEL_SHIFT                    (8)
+#define LPTIM_CFG_DIVSEL_MASK                     (0x7U << LPTIM_CFG_DIVSEL_SHIFT)
+#define LPTIM_CFG_DIVSEL(x)                       (((uint32_t)(((uint32_t)(x)) << LPTIM_CFG_DIVSEL_SHIFT)) & LPTIM_CFG_DIVSEL_MASK)
 
 #define LPTIM_CFG_TRIGCFG_SHIFT                   (6)
 #define LPTIM_CFG_TRIGCFG_MASK                    (0x3U << LPTIM_CFG_TRIGCFG_SHIFT)
@@ -8087,7 +8087,7 @@ typedef struct {
     __IO uint32_t NSSR;                                                        ///< Slave Chip Select Register                   offset: 0x28
     __IO uint32_t EXTCTL;                                                      ///< data control register                        offset: 0x2C
     __IO uint32_t I2SCFGR;                                                     ///< I2S_ configuration register                   offset: 0x30
-} SPI_Type;
+} SPI_Type, I2S_Type;
 
 /*******************************************************************************
  * SPI Type
@@ -8378,9 +8378,9 @@ typedef struct {
 #define SPI_I2S_I2SCFGR_I2SDIV_MASK              (0x1FFU << SPI_I2S_I2SCFGR_I2SDIV_SHIFT)
 #define SPI_I2S_I2SCFGR_I2SDIV(x)                (((uint32_t)(((uint32_t)(x)) << SPI_I2S_I2SCFGR_I2SDIV_SHIFT)) & SPI_I2S_I2SCFGR_I2SDIV_MASK)
 
-#define SPI_I2S_I2SCFGR_HDSEL_SHIFT              (13)
-#define SPI_I2S_I2SCFGR_HDSEL_MASK               (0x01U << SPI_I2S_I2SCFGR_HDSEL_SHIFT)
-#define SPI_I2S_I2SCFGR_HDSEL(x)                 (((uint32_t)(((uint32_t)(x)) << SPI_I2S_I2SCFGR_HDSEL_SHIFT)) & SPI_I2S_I2SCFGR_HDSEL_MASK)
+#define SPI_I2S_I2SCFGR_HFDSEL_SHIFT              (13)
+#define SPI_I2S_I2SCFGR_HFDSEL_MASK               (0x01U << SPI_I2S_I2SCFGR_HFDSEL_SHIFT)
+#define SPI_I2S_I2SCFGR_HFDSEL(x)                 (((uint32_t)(((uint32_t)(x)) << SPI_I2S_I2SCFGR_HFDSEL_SHIFT)) & SPI_I2S_I2SCFGR_HFDSEL_MASK)
 
 #define SPI_I2S_I2SCFGR_MCKSEL_SHIFT             (12)
 #define SPI_I2S_I2SCFGR_MCKSEL_MASK              (0x01U << SPI_I2S_I2SCFGR_MCKSEL_SHIFT)
@@ -8392,7 +8392,7 @@ typedef struct {
 
 #define SPI_I2S_I2SCFGR_SPII2S_SHIFT             (10)
 #define SPI_I2S_I2SCFGR_SPII2S_MASK              (0x01U << SPI_I2S_I2SCFGR_SPII2S_SHIFT)
-#define SPI_I2S_I2SCFGR_SPII2S_(x)                (((uint32_t)(((uint32_t)(x)) << SPI_I2S_I2SCFGR_SPII2S_SHIFT)) & SPI_I2S_I2SCFGR_SPII2S_MASK)
+#define SPI_I2S_I2SCFGR_SPII2S(x)                (((uint32_t)(((uint32_t)(x)) << SPI_I2S_I2SCFGR_SPII2S_SHIFT)) & SPI_I2S_I2SCFGR_SPII2S_MASK)
 
 #define SPI_I2S_I2SCFGR_PCMSYNC_SHIFT            (6)
 #define SPI_I2S_I2SCFGR_PCMSYNC_MASK             (0x01U << SPI_I2S_I2SCFGR_PCMSYNC_SHIFT)

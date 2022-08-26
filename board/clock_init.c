@@ -24,6 +24,18 @@ void BOARD_InitBootClocks(void)
     RCC_EnableAPB2Periphs(RCC_APB2_PERIPH_UART1, true);
     RCC_ResetAPB2Periphs(RCC_APB2_PERIPH_UART1);
 
+		/* SPI3. */
+    RCC_EnableAPB1Periphs(RCC_APB1_PERIPH_SPI3, true);
+    RCC_ResetAPB1Periphs(RCC_APB1_PERIPH_SPI3);
+	
+    /* SPI2. */
+    RCC_EnableAPB1Periphs(RCC_APB1_PERIPH_SPI2, true);
+    RCC_ResetAPB1Periphs(RCC_APB1_PERIPH_SPI2);
+
+    /* DMA1. */
+    RCC_EnableAHB1Periphs(RCC_AHB1_PERIPH_DMA1, true);
+    RCC_ResetAHB1Periphs(RCC_AHB1_PERIPH_DMA1);
+
     /* GPIOA. */
     RCC_EnableAHB1Periphs(RCC_AHB1_PERIPH_GPIOA, true);
     RCC_ResetAHB1Periphs(RCC_AHB1_PERIPH_GPIOA);
@@ -35,6 +47,14 @@ void BOARD_InitBootClocks(void)
     /* GPIOC. */
     RCC_EnableAHB1Periphs(RCC_AHB1_PERIPH_GPIOC, true);
     RCC_ResetAHB1Periphs(RCC_AHB1_PERIPH_GPIOC);
+
+    /* GPIOD. */
+    RCC_EnableAHB1Periphs(RCC_AHB1_PERIPH_GPIOD, true);
+    RCC_ResetAHB1Periphs(RCC_AHB1_PERIPH_GPIOD);
+
+    /* GPIOE. */
+    RCC_EnableAHB1Periphs(RCC_AHB1_PERIPH_GPIOE, true);
+    RCC_ResetAHB1Periphs(RCC_AHB1_PERIPH_GPIOE);
 }
 
 /* Switch to HSI. */

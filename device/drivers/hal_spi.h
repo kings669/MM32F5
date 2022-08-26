@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 MindMotion Microelectronics Co., Ltd.
+ * Copyright 2021 MindMotion Microelectronics Co., Ltd.
  * All rights reserved.
  *
  * SPDX-License-Identifier: BSD-3-Clause
@@ -14,6 +14,11 @@
  * @addtogroup SPI
  * @{
  */
+
+/*!
+ * @brief SPI driver version number.
+ */
+#define SPI_DRIVER_VERSION 0u /*!< spi_0. */
 
 /*!
  * @addtogroup SPI_STATUS
@@ -47,27 +52,27 @@
  */
 typedef enum
 {
-    SPI_PolarityPhase_Alt0 = 0u, /*!< CPOL = 0, CPHA = 0, Clock line is low when idle. Tx data line is high when idle. Data valid when at rising edge */
-    SPI_PolarityPhase_Alt1 = 1u, /*!< CPOL = 0, CPHA = 1, Clock line is low when idle. Tx data line is high when idle. Data valid when at falling edge */
-    SPI_PolarityPhase_Alt2 = 2u, /*!< CPOL = 1, CPHA = 0, Clock line is high when idle. Tx data line is high when idle. Data valid when at falling edge */
-    SPI_PolarityPhase_Alt3 = 3u, /*!< CPOL = 1, CPHA = 1, Clock line is high when idle. Tx data line is high when idle. Data valid when at rising edge */
-} SPI_PolarityPhase_Type;
+    SPI_PolPha_Alt0 = 0u, /*!< CPOL = 0, CPHA = 1, Clock line is low when idle, Data valid when at falling edge */
+    SPI_PolPha_Alt1 = 1u, /*!< CPOL = 0, CPHA = 0, Clock line is low when idle, Data valid when at rising edge */
+    SPI_PolPha_Alt2 = 2u, /*!< CPOL = 1, CPHA = 1, Clock line is high when idle, Data valid when at rising edge */
+    SPI_PolPha_Alt3 = 3u, /*!< CPOL = 1, CPHA = 0, Clock line is high when idle, Data valid when at falling edge */
+}   SPI_PolPha_Type;
 
 /*!
  * @brief SPI data width type.
  */
 typedef enum
 {
-    SPI_DataWidth_32b  = 0u, /*!< Data Width 32 bits. */
-    SPI_DataWidth_1b  = 1u, /*!< Data Width 1 bits. */
-    SPI_DataWidth_2b  = 2u, /*!< Data Width 2 bits. */
-    SPI_DataWidth_3b  = 3u, /*!< Data Width 3 bits. */
-    SPI_DataWidth_4b  = 4u, /*!< Data Width 4 bits. */
-    SPI_DataWidth_5b  = 5u, /*!< Data Width 5 bits. */
-    SPI_DataWidth_6b  = 6u, /*!< Data Width 6 bits. */
-    SPI_DataWidth_7b  = 7u, /*!< Data Width 7 bits. */
-    SPI_DataWidth_8b  = 8u, /*!< Data Width 8 bits. */
-    SPI_DataWidth_9b  = 9u, /*!< Data Width 9 bits. */
+    SPI_DataWidth_32b = 0u,  /*!< Data Width 32 bits. */
+    SPI_DataWidth_1b  = 1u,  /*!< Data Width 1 bits. */
+    SPI_DataWidth_2b  = 2u,  /*!< Data Width 2 bits. */
+    SPI_DataWidth_3b  = 3u,  /*!< Data Width 3 bits. */
+    SPI_DataWidth_4b  = 4u,  /*!< Data Width 4 bits. */
+    SPI_DataWidth_5b  = 5u,  /*!< Data Width 5 bits. */
+    SPI_DataWidth_6b  = 6u,  /*!< Data Width 6 bits. */
+    SPI_DataWidth_7b  = 7u,  /*!< Data Width 7 bits. */
+    SPI_DataWidth_8b  = 8u,  /*!< Data Width 8 bits. */
+    SPI_DataWidth_9b  = 9u,  /*!< Data Width 9 bits. */
     SPI_DataWidth_10b = 10u, /*!< Data Width 10 bits. */
     SPI_DataWidth_11b = 11u, /*!< Data Width 11 bits. */
     SPI_DataWidth_12b = 12u, /*!< Data Width 12 bits. */
@@ -97,16 +102,16 @@ typedef enum
  */
 typedef enum
 {
-    SPI_PadMux_SCK_MOSI_NSS_MISO = 0u, /*!< Specifies SPI pin mux switcher 0. */
-    SPI_PadMux_SCK_MOSI_MISO_NSS = 1u, /*!< Specifies SPI pin mux switcher 1. */
-    SPI_PadMux_SCK_NSS_MOSI_MISO = 2u, /*!< Specifies SPI pin mux switcher 2. */
-    SPI_PadMux_SCK_NSS_MISO_MOSI = 3u, /*!< Specifies SPI pin mux switcher 3. */
-    SPI_PadMux_SCK_MISO_MOSI_NSS = 4u, /*!< Specifies SPI pin mux switcher 4. */
-    SPI_PadMux_SCK_MISO_NSS_MOSI = 5u, /*!< Specifies SPI pin mux switcher 5. */
-    SPI_PadMux_MOSI_SCK_NSS_MISO = 6u, /*!< Specifies SPI pin mux switcher 6. */
-    SPI_PadMux_MOSI_SCK_MISO_NSS = 7u, /*!< Specifies SPI pin mux switcher 7. */
-    SPI_PadMux_MOSI_NSS_SCK_MISO = 8u, /*!< Specifies SPI pin mux switcher 8. */
-    SPI_PadMux_MOSI_NSS_MISO_SCK = 9u, /*!< Specifies SPI pin mux switcher 9. */
+    SPI_PadMux_SCK_MOSI_NSS_MISO = 0u,  /*!< Specifies SPI pin mux switcher 0. */
+    SPI_PadMux_SCK_MOSI_MISO_NSS = 1u,  /*!< Specifies SPI pin mux switcher 1. */
+    SPI_PadMux_SCK_NSS_MOSI_MISO = 2u,  /*!< Specifies SPI pin mux switcher 2. */
+    SPI_PadMux_SCK_NSS_MISO_MOSI = 3u,  /*!< Specifies SPI pin mux switcher 3. */
+    SPI_PadMux_SCK_MISO_MOSI_NSS = 4u,  /*!< Specifies SPI pin mux switcher 4. */
+    SPI_PadMux_SCK_MISO_NSS_MOSI = 5u,  /*!< Specifies SPI pin mux switcher 5. */
+    SPI_PadMux_MOSI_SCK_NSS_MISO = 6u,  /*!< Specifies SPI pin mux switcher 6. */
+    SPI_PadMux_MOSI_SCK_MISO_NSS = 7u,  /*!< Specifies SPI pin mux switcher 7. */
+    SPI_PadMux_MOSI_NSS_SCK_MISO = 8u,  /*!< Specifies SPI pin mux switcher 8. */
+    SPI_PadMux_MOSI_NSS_MISO_SCK = 9u,  /*!< Specifies SPI pin mux switcher 9. */
     SPI_PadMux_MOSI_MISO_SCK_NSS = 10u, /*!< Specifies SPI pin mux switcher 10. */
     SPI_PadMux_MOSI_MISO_NSS_SCK = 11u, /*!< Specifies SPI pin mux switcher 11. */
     SPI_PadMux_NSS_SCK_MOSI_MISO = 12u, /*!< Specifies SPI pin mux switcher 12. */
@@ -134,26 +139,16 @@ typedef enum
 } SPI_XferMode_Type;
 
 /*!
- * @brief SPI CS select signal type.
- */
-typedef enum
-{
-    SPI_CSMode_NonAuto = 0u,  /*!< CS select signal from software. */
-    SPI_CSMode_Auto    = 1u,  /*!< CS select signal from hardware. */
-    SPI_CSMode_TI      = 2u,  /*!< SPI will communicate data according to TI mode, and CS select signal from hardware. */
-} SPI_CSMode_Type;
-
-/*!
  * @brief This type of structure instance is used to keep the settings when calling the @ref SPI_InitMaster() to initialize the SPI module.
  */
 typedef struct
 {
     uint32_t                ClockFreqHz;    /*!< Bus Clock Freq. */
     uint32_t                BaudRate;       /*!< This member configures the UART communication baud rate. */
-    SPI_PolarityPhase_Type  PolarityPhase;  /*!< Specifies different communication modes. */
+    SPI_PolPha_Type         PolPha;         /*!< Specifies different communication modes. */
     SPI_DataWidth_Type      DataWidth;      /*!< Specifies the number of bits of data to be transmitted. */
     SPI_XferMode_Type       XferMode;       /*!< Specifies whether the Receive or Transmit mode is enable or not. */
-    SPI_CSMode_Type         CSMode;         /*!< Specifies whether the chip selection signal is controlled by SPI or not, and whether SPI communicate data according to TI mode. */
+    bool                    AutoCS;         /*!< Specifies whether the chip selection signal is controlled by SPI or not. */
     bool                    LSB;            /*!< Specifies whether the current state is Thumb or ARM mode. */
 } SPI_Master_Init_Type;
 
@@ -162,10 +157,10 @@ typedef struct
  */
 typedef struct
 {
-    SPI_PolarityPhase_Type  PolarityPhase;  /*!< Specifies different communication modes. */
+    SPI_PolPha_Type         PolPha;         /*!< Specifies different communication modes. */
     SPI_DataWidth_Type      DataWidth;      /*!< Specifies the number of bits of data to be transmitted. */
     SPI_XferMode_Type       XferMode;       /*!< Specifies whether the Receive or Transmit mode is enable or not. */
-    SPI_CSMode_Type         CSMode;         /*!< Specifies whether the chip selection signal is controlled by SPI or not, and whether SPI communicate data according to TI mode. */
+    bool                    AutoCS;         /*!< Specifies whether the chip selection signal is controlled by SPI or not. */
     bool                    LSB;            /*!< Specifies whether the current state is Thumb or ARM mode. */
 } SPI_Slave_Init_Type;
 
@@ -322,4 +317,3 @@ void SPI_SetPadMux(SPI_Type * SPIx, SPI_PadMux_Type opt);
  */
 
 #endif /* __HAL_SPI_H__ */
-
